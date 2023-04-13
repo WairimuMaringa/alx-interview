@@ -34,7 +34,7 @@ if __name__ == '__main__':
     try:
         for line in sys.stdin:
             parse_line(line)
-            if linenum % 10 == 0:
+            if line_number % 10 == 0:
                 print_stats()
             line_number += 1
     except KeyboardInterrupt:
